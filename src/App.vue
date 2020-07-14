@@ -1,10 +1,21 @@
 <template>
 <div class='app'>
-<router-link to="/">Home</router-link> |
-<router-link to="about">demo</router-link>
+<router-link to="/">Home</router-link>
 <router-view />
+<ConnectivityExample />
+<vue-snotify></vue-snotify>
 </div>
 </template>
+
+<script>
+import ConnectivityExample from './components/ConnectivityExample'
+export default {
+  name: 'app',
+  components: {
+    ConnectivityExample
+  }
+}
+</script>
 
 <style>
 .app {
